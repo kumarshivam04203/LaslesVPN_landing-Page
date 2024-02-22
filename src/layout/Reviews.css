@@ -1,0 +1,116 @@
+.container {
+  overflow-x: scroll;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  padding: 30px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 30px 150px;
+  }
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  padding-top: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 100px;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 40px 150px;
+    padding-top: 0;
+  }
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.reviews {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 30px;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  padding: 20px;
+  width: 360px;
+  height: 290px;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.review.active {
+  border: 2px solid #f53838;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  padding-top: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 100px;
+    padding-top: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 40px 150px;
+    padding-top: 0;
+  }
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.select {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.select.active {
+  width: 30px;
+  height: 10px;
+  background-color: #f53838;
+}
